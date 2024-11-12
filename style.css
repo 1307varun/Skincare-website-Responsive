@@ -1,0 +1,608 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for large screens (default) */
+.section1 {
+    width: 100%;
+}
+
+.first, .second {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.first {
+    background-color: black;
+    color: white;
+}
+
+.second {
+    background-color: rgb(127,255,212);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.third {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+}
+
+.f2 img {
+    height: 90px;
+    width: 120px;
+    margin-left: 500px;
+}
+
+.f3 {
+    margin-left: 400px;
+}
+
+.f4 {
+    margin-left: 50px;
+}
+
+.fourth {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.section2 {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.section3 {
+    padding-top: 30px;
+    padding-left: 200px;
+}
+
+.section2 img{
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive design for tablets and smaller screens (including mobile) */
+@media (max-width: 1024px) {
+
+    /* Adjust section1 layout for smaller screens */
+    .third {
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .f2 img {
+        margin-left: 0;
+        height: 80px;
+        width: 100px;
+    }
+
+    .f3, .f4 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Adjust the 'fourth' section for better spacing */
+    .fourth {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .fourth p, .fourth select {
+        margin-bottom: 10px;
+    }
+
+    .section3 {
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    /* Adjust image sizes in section2 and section3 */
+    .section2 img, .section3 img {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Further adjustments for smaller screens (mobile devices, including Android) */
+@media (max-width: 768px) {
+
+    .first, .second {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .third {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f2 img {
+        margin-left: 0;
+        height: 60px;
+        width: 80px;
+    }
+
+    .f3, .f4 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    /* Update the 'fourth' section to be more compact */
+    .fourth {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .fourth p, .fourth select {
+        margin-bottom: 10px;
+    }
+
+    .section2 img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section3 {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    /* Section3 image size */
+    .section3 img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+
+    .first, .second {
+        font-size: 12px;
+    }
+
+    .third {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f2 img {
+        height: 50px;
+        width: 70px;
+    }
+
+    .f3, .f4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .f4 {
+        margin-top: 10px;
+    }
+
+    .fourth {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fourth p, .fourth select {
+        margin-bottom: 5px;
+    }
+
+    .section2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section3 {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+
+
+.section4 {
+    width: 100%;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px 0;  
+}
+
+/* Styling for the image inside .section4 */
+.section4 img {
+    width: 100%;  
+    height: auto;  
+    max-width: 1200px;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section4 img {
+        width: 90%;  
+        max-width: 1000px;  
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section4 img {
+        width: 95%; 
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section4 img {
+        width: 100%; 
+        max-width: 100%; 
+    }
+}
+
+.section5 {
+    width: 100%;  /* Ensure the section takes full width */
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px 0;  
+}
+
+/* Styling for the image inside .section4 */
+.section5 img {
+    width: 100%;  
+    height: auto;  
+    max-width: 1200px;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section5 img {
+        width: 90%;  
+        max-width: 1000px;  
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section5 img {
+        width: 95%; 
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section5 img {
+        width: 100%; 
+        max-width: 100%;  
+    }
+}
+
+.section6 {
+    width: 100%;  /* Ensure the section takes full width */
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px 0;  
+}
+
+/* Styling for the image inside .section4 */
+.section6 img {
+    width: 100%;  
+    height: auto; 
+    max-width: 1200px;  
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section6 img {
+        width: 90%;  
+        max-width: 1000px;  
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section6 img {
+        width: 95%; 
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section6 img {
+        width: 100%;  
+        max-width: 100%;  
+    }
+}
+
+
+.section7 {
+    width: 100%;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px 0; 
+}
+
+/* Styling for the image inside .section4 */
+.section7 img {
+    width: 100%;  
+    height: auto;  
+    max-width: 1200px;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section7 img {
+        width: 90%; 
+        max-width: 1000px;  
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section7 img {
+        width: 95%;  
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section7 img {
+        width: 100%;  
+        max-width: 100%;  
+    }
+}
+
+/* Default styling for .section8 and .section9 */
+.section8, .section9 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.section8 img, .section9 img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .section8 img, .section9 img {
+        width: 90%;
+        max-width: 1000px;
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section8 img, .section9 img {
+        width: 95%;
+        max-width: 100%;
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section8 img, .section9 img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.section10 {
+    width: 100%;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 20px 0;  
+}
+
+/* Styling for the image inside .section4 */
+.section10 img {
+    width: 100%; 
+    height: auto; 
+    max-width: 1200px;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section10 img {
+        width: 90%;  
+        max-width: 1000px;  
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section10 img {
+        width: 95%;  
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section10 img {
+        width: 100%;  
+        max-width: 100%;  
+    }
+}
+
+.section11 {
+    width: 100%; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px 0;  
+}
+
+/* Styling for the image inside .section4 */
+.section11 img {
+    width: 100%; 
+    height: auto;  
+    max-width: 1200px; 
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section11 img {
+        width: 90%;  
+        max-width: 1000px; 
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section11 img {
+        width: 95%;  
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section11 img {
+        width: 100%;  
+        max-width: 100%; 
+    }
+}
+
+.section12 {
+    width: 100%; 
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    padding: 20px 0;  
+}
+
+/* Styling for the image inside .section4 */
+.section12 img {
+    width: 100%; 
+    height: auto;  
+    max-width: 1200px; 
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section12 img {
+        width: 90%;  
+        max-width: 1000px;
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section12 img {
+        width: 95%; 
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section12 img {
+        width: 100%;  
+        max-width: 100%;  
+    }
+}
+
+.section13 {
+    width: 100%; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding: 20px 0; 
+}
+
+/* Styling for the image inside .section4 */
+.section13 img {
+    width: 100%; 
+    height: auto; 
+    max-width: 1200px;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Responsive design for tablets and smaller screens (e.g., portrait or landscape tablets) */
+@media (max-width: 1024px) {
+    .section13 img {
+        width: 90%;  
+        max-width: 1000px;  
+    }
+}
+
+/* For mobile devices (Android, iPhones, etc.) */
+@media (max-width: 768px) {
+    .section13 img {
+        width: 95%;
+        max-width: 100%;  
+    }
+}
+
+/* For extra small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+    .section13 img {
+        width: 100%;  
+        max-width: 100%;  
+    }
+}
+
